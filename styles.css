@@ -27,12 +27,28 @@ body{
     color: rgb(134, 92, 92) !important;
 }
 a.nav-link{
-    margin-left: 5em;
+    margin-left: 3em;
     float: right;
 }
 .navbar-brand{
     color: aliceblue !important;
-    font-size: 25px;
+    font-size: 23px;
+}
+#searchInput {
+    width: 15em;
+    margin-left: 3em;
+    color:rgb(134, 92, 92);
+    background-color: bisque;
+    border-radius: 8px;
+    border-color: rgb(94, 86, 77);
+}
+#searchSubmit {
+    border-radius: 12px;
+    background-color: rgb(134, 92, 92);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-color: rgb(94, 86, 77);
+    margin-top: 5px;
 }
 h1{
     text-align: center;
@@ -113,6 +129,7 @@ ul{
     content: "";
     display: table;
     clear: both;
+    margin-bottom: 3em;
 }
 .column li{
     font-size: 15px;
