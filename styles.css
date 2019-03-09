@@ -27,7 +27,7 @@ body{
     color: rgb(134, 92, 92) !important;
 }
 a.nav-link{
-    margin-left: 3em;
+    margin-left: 6em;
     float: right;
 }
 .navbar-brand{
@@ -115,7 +115,7 @@ ul{
   width: 100%;
 }
 .column img{
-    width: 600px;
+    width: 500px;
     height: 430px;
     margin-left: 3em;
 }
@@ -162,4 +162,22 @@ ul{
 .contact p{
     text-align: center;
     color: rgb(134, 92, 92);
+}
+#add_recipe{
+    text-align: center;
+    color:rgb(134, 92, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#app{
+    text-align: center;
+    color:rgb(134, 92, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#column_ingredient{
+    background-color:rgb(190, 201, 162)
+}
+.prepare{
+    background-color:rgb(190, 201, 162)
 }
