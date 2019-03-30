@@ -1,0 +1,183 @@
+
+body{
+/*    background-image: url("/images/white.jpg");*/
+    background-color: rgb(227, 228, 198);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* Menu */
+.bg-dark {
+    background-color: rgb(206, 148, 94) !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(163, 143, 125);
+    line-height: 1.5em !important;
+    margin-bottom: 3em;
+    opacity: 0.8;
+  }
+.nav-link:hover {
+    color: aliceblue !important;
+  }
+.nav-item.active a.nav-link:hover{
+    color: aliceblue !important;
+}
+.nav-item.active a.nav-link{
+    color: rgb(134, 92, 92) !important;
+}
+a.nav-link{
+    margin-left: 6em;
+    float: right;
+}
+.navbar-brand{
+    color: aliceblue !important;
+    font-size: 23px;
+}
+#searchInput {
+    width: 15em;
+    margin-left: 3em;
+    color:rgb(134, 92, 92);
+    background-color: bisque;
+    border-radius: 8px;
+    border-color: rgb(94, 86, 77);
+}
+#searchSubmit {
+    border-radius: 12px;
+    background-color: rgb(134, 92, 92);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-color: rgb(94, 86, 77);
+    margin-top: 5px;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(129, 79, 22);
+    font-size: 30px;
+    margin-bottom: 1.5em;
+}
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(94, 86, 77);
+    font-size: 25px;
+    margin-bottom: 1.5em;
+}
+
+.home-paragraph{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(104, 96, 121);
+    margin-bottom: 3em;
+}
+
+footer{
+    color: dimgrey;
+    margin-top: 5em;
+}
+
+.about-p{
+    color:rgb(83, 63, 63);
+    font-size: 20px;
+    text-align: justify;
+    margin-left:5em;
+    margin-right:5em;
+    size: 80%;
+}
+ul{
+    list-style: none;
+}
+.review-list{
+    background-color: rgb(187, 179, 168);
+    opacity: 0.7;
+    width:96%;
+    line-height: 2em;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+
+/* Image Grid */
+.portfolio-photo {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  
+.image img {
+  width: 100%;
+}
+.column img{
+    width: 500px;
+    height: 430px;
+    margin-left: 3em;
+}
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 3em;
+}
+.column li{
+    font-size: 15px;
+    color: rgb(134, 92, 92);
+}
+.prepare p{
+    font-size: 15px;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: justify;
+    color: rgb(134, 92, 92);
+    
+}
+.prepare h3{
+    margin-left: 3em;
+    margin-right: 3em;
+    color: rgb(206, 148, 94);
+}
+.column h3{
+    color: rgb(206, 148, 94);
+}
+.letter p{
+    text-align: justify;
+    color: rgb(134, 92, 92);
+}
+.letter{
+    margin-left: 20em;
+    margin-right: 20em;
+}
+.contact p{
+    text-align: center;
+    color: rgb(134, 92, 92);
+}
+#add_recipe{
+    text-align: center;
+    color:rgb(134, 92, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#app{
+    text-align: center;
+    color:rgb(134, 92, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#column_ingredient{
+    background-color:rgb(190, 201, 162)
+}
+.prepare{
+    background-color:rgb(190, 201, 162)
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Global Recipe</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Global Recipe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/show.html">Recipe<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1> Need Some Ideas for Food? <img src="./images/idea.png" alt="bulb" style="width:42px;height:42px;"></h1>
+
+    <div id="admin">
+        <div class="currentItems">
+            <div v-for="item in currentItems">
+                <hr>
+                <center>
+                <h3>{{item.title}}</h3>
+                </center>
+                <div class="row">
+                    <div class="column"><img :src="item.path" /></div>
+                    <div class="column" id="column_ingredient">
+                        <h4>Ingredients: </h4>
+                        <p>{{item.ingredient}}</p>
+                    </div>
+                </div>
+                <br>
+                <div class="prepare">
+                    <h4>PREPARATION: </h4>
+                    <p>{{item.prepare}}</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h2>Add New Recipe</h2>
+        <center>
+            <div class="form">
+                <input v-model="title" placeholder="Recipe Title">
+                <br>
+                <br>
+                <p>Add the recipe image</p>
+                <input type="file" name="photo" @change="fileChanged">
+                <br>
+                <br>
+                <p>Add ingredients and preparation</p>
+                <textarea v-model="ingredient" placeholder="ingredient"></textarea>
+                <textarea v-model="prepare" placeholder="prepare"></textarea>
+                <br>
+                <button @click="upload">Upload</button>
+            </div>
+        </center>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
+        integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script text="type/javascript" src="admin.js"></script>
+    <script text="type/javascript" src="read.js"></script>
+</body>
+
+<footer>
+    <hr>
+    <center>
+        <a href="https://github.com/SiqiG47/Global_Recipe.git">Global_Recipe</a>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+    </center>
+</footer>
+
+</html>
